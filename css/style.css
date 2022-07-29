@@ -1,6 +1,7 @@
 :root {
     --padding: 10px;
     --header-padding: 0px 10px;
+    --icon-padding: 5px 0;
     --footer-height: 100px;
     --header-height: 90px;
 }
@@ -30,7 +31,14 @@ img {
 /***********************
     UTILITIES
 ***********************/
+.col {
+    display: flex;
+    flex-direction: column;
+}
 
+.space-between {
+    justify-content: space-between;
+}
 
 /***********************
     //UTILITIES
@@ -50,6 +58,7 @@ img {
     flex-grow: 1;
 }
 
+/** Aside **/
 aside {
     background-color: #000;
     padding: var(--padding);
@@ -59,7 +68,14 @@ aside img {
     width: 40px;
 }
 
+.icon-container img {
+    padding: var(--icon-padding);
+}
+
+/** //Aside **/
+
 /** Header **/
+
 header {
     height: var(--header-height);
     line-height: var(--header-height);
@@ -69,6 +85,9 @@ header {
     padding: var(--header-padding);
     text-align: right;
     vertical-align: middle;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 header a {
@@ -86,6 +105,12 @@ header a {
 main {
     flex-grow: 1;
     position: relative;
+}
+
+#albums {
+    overflow-y: auto;
+    height: 100vh;
+    padding-top: var(--header-height);
 }
 
 /** //Main **/
