@@ -1,6 +1,8 @@
 :root {
     --padding: 10px;
+    --header-padding: 0px 10px;
     --footer-height: 100px;
+    --header-height: 90px;
 }
 
 /***********************
@@ -37,7 +39,64 @@ img {
 /***********************
     STYLE
 ***********************/
+.web-app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
+.app-container {
+    display: flex;
+    flex-grow: 1;
+}
+
+aside {
+    background-color: #000;
+    padding: var(--padding);
+}
+
+aside img {
+    width: 40px;
+}
+
+/** Header **/
+header {
+    height: var(--header-height);
+    line-height: var(--header-height);
+    background-color: #080b12;
+    opacity: 95%;
+    width: 100%;
+    padding: var(--header-padding);
+    text-align: right;
+    vertical-align: middle;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 35px;
+    border-radius: 20px;
+
+}
+
+/** //Header **/
+
+/** Main **/
+main {
+    flex-grow: 1;
+    position: relative;
+}
+
+/** //Main **/
+
+/** Footer **/
+footer {
+    height: var(--footer-height);
+    background-color: #282828;
+}
+
+/** //Footer **/
 
 /***********************
     //STYLE
