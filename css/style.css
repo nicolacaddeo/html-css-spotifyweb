@@ -1,9 +1,12 @@
 :root {
     --padding: 10px;
+    --padding-2: 20px;
+    --padding-3: 5px;
     --header-padding: 0px 10px;
     --icon-padding: 5px 0;
     --footer-height: 100px;
     --header-height: 90px;
+    --gray: #646464;
 }
 
 /***********************
@@ -62,16 +65,83 @@ img {
 aside {
     background-color: #000;
     padding: var(--padding);
+    color: var(--gray);
+}
 
+#big-logo {
+    display: none;
 }
 
 aside img {
     width: 35px;
+    vertical-align: middle;
+}
+
+aside span {
+    display: none;
+    vertical-align: middle;
+    font-size: 0.9rem;
+    font-weight: 700;
 }
 
 .icon-container img {
     padding: var(--icon-padding);
 }
+
+/******** playlist section ********/
+#playlist-actions {
+    padding-top: var(--padding-2);
+    display: none;
+}
+
+#playlist-actions h4 {
+    color: #fff;
+    padding-bottom: var(--padding);
+}
+
+#playlist-actions strong {
+    display: block;
+    font-size: 0.9rem;
+    padding: var(--padding-3);
+    padding-left: 0;
+}
+
+#new-playlist {
+    padding-bottom: 8px;
+}
+
+#new-playlist button,
+span {
+    vertical-align: middle;
+}
+
+#new-playlist span {
+    font-size: 1.1rem;
+}
+
+#new-playlist-button {
+    background-color: var(--gray);
+    border: none;
+    padding: 0 7px;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+#account-info span {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.icon-container hr {
+    margin: 5px 0;
+    display: none;
+}
+
+
+/******** //playlist section ********/
+
 
 /** //Aside **/
 
@@ -134,6 +204,38 @@ footer {
 /***********************
     BIG PHONE RESPONSIVE
 ***********************/
+@media screen and (min-width: 639px) {
+    aside {
+        padding: var(--padding-2);
+        padding-right: 40px;
+    }
+
+    aside img {
+        width: 25px;
+    }
+
+    aside span {
+        display: inline;
+    }
+
+    #big-logo {
+        display: inline-block;
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+    #small-logo {
+        display: none;
+    }
+
+    #playlist-actions {
+        display: block;
+    }
+
+    .icon-container hr {
+        display: block;
+    }
+}
 
 /***********************
     //BIG PHONE RESPONSIVE

@@ -18,14 +18,47 @@
         <div class="app-container">
             <aside class="col space-between">
                 <div class="col icon-container">
-                    <img src="img/logo-small.svg" alt="spotify logo">
-                    <img src="img/home.svg" alt="home">
-                    <img src="img/search.svg" alt="search button">
-                    <img src="img/libreria.svg" alt="library">
+                    <img src="img/logo-small.svg" id="small-logo" alt="spotify logo">
+                    <img src="img/logo.svg" id="big-logo" alt="spotify logo">
+                    <div>
+                        <!-- contenitori per responsive -->
+                        <img src="img/home.svg" alt="home">
+                        <span>Home</span>
+                    </div>
+                    <div>
+                        <img src="img/search.svg" alt="search button">
+                        <span>Cerca</span>
+                    </div>
+                    <div>
+                        <img src="img/libreria.svg" alt="library">
+                        <span>La tua libreria</span>
+                    </div>
+                    <div id="playlist-actions">
+                        <h4>PLAYLIST</h4>
+                        <div id="new-playlist">
+                            <!-- contenitore sezione "Crea Playlist" (bottone) -->
+                            <button id="new-playlist-button">+</button>
+                            <span>Crea Playlist</span>
+                        </div>
+                        <strong>Nome Playlist</strong>
+                        <strong>Nome Playlist</strong>
+                        <strong>Nome Playlist</strong>
+                        <strong>Nome Playlist</strong>
+                        <strong>Nome Playlist</strong>
+                        <strong>Nome Playlist</strong>
+                        <strong>Nome Playlist</strong>
+                    </div>
                 </div>
                 <div class="col icon-container">
-                    <img src="img/download.svg" alt="download button">
-                    <img src="img/profile.svg" alt="account">
+                    <div>
+                        <img src="img/download.svg" alt="download button">
+                        <span>Installa app</span>
+                    </div>
+                    <hr>
+                    <div id="account-info">
+                        <img src="img/profile.svg" alt="account">
+                        <span>Nicola Caddeo</span>
+                    </div>
                 </div>
             </aside>
             <main>
