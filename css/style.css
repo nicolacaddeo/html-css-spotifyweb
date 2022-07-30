@@ -327,7 +327,11 @@ footer {
 /***********************
     TABLET RESPONSIVE
 ***********************/
-@media screen and (min-width: 878px) {}
+@media screen and (min-width: 878px) {
+    .album-info {
+        width: calc(100% / 4);
+    }
+}
 
 /***********************
     //TABLET RESPONSIVE
@@ -336,6 +340,11 @@ footer {
 /***********************
     DEKSTOP RESPONSIVE
 ***********************/
+@media screen and (min-width: 1440px) {
+    .album-info {
+        width: calc(100% / 6);
+    }
+}
 
 /***********************
     //DEKSTOP RESPONSIVE
