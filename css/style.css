@@ -139,9 +139,7 @@ span {
     display: none;
 }
 
-
 /******** //playlist section ********/
-
 
 /** //Aside **/
 
@@ -184,6 +182,27 @@ main {
     padding-top: var(--header-height);
     background-color: #141922;
 }
+
+/** main buttons **/
+.main-action {
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+}
+
+.main-action a {
+    color: var(--gray);
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    padding: 20px 7px;
+}
+
+
+
+/** //main buttons **/
+
 
 /** //Main **/
 
