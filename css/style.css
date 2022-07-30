@@ -43,6 +43,26 @@ img {
     justify-content: space-between;
 }
 
+.align-items-center {
+    align-items: center;
+}
+
+.section-title {
+    color: #fff;
+    font-size: 1.7rem;
+    padding-left: 25px;
+    padding-bottom: 30px;
+}
+
+.section-description {
+    color: var(--gray);
+    padding-left: 25px;
+}
+
+section strong {
+    display: inline-block;
+}
+
 /***********************
     //UTILITIES
 ***********************/
@@ -199,10 +219,54 @@ main {
     padding: 20px 7px;
 }
 
-
-
 /** //main buttons **/
 
+/** album and playlist container **/
+#albums section:nth-child(2),
+section:nth-child(3),
+section:nth-child(4) {
+    padding-top: 30px;
+}
+
+.album-container {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.album-info {
+    width: calc(100% / 2);
+    padding: 0 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.album-name {
+    color: #fff;
+    font-size: 1.1rem;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.section-description {
+    padding-bottom: var(--padding-2);
+}
+
+.artist-name {
+    color: var(--gray);
+}
+
+.artist-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/** //album and playlist container **/
 
 /** //Main **/
 
