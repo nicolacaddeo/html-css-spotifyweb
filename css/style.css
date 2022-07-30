@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.2rem;
 }
 
@@ -215,7 +215,7 @@ main {
     display: inline-block;
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.95rem;
+    font-size: 0.80rem;
     padding: 20px 7px;
 }
 
