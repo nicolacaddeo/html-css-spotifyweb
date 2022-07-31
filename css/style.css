@@ -88,6 +88,10 @@ aside {
     padding: var(--padding);
     color: var(--gray);
     height: calc(100vh - var(--footer-height));
+    position: fixed;
+    left: 0;
+    z-index: 998;
+    width: 10vw;
 }
 
 #big-logo {
@@ -196,6 +200,7 @@ header a {
 main {
     flex-grow: 1;
     position: relative;
+    padding-left: 10vw;
 }
 
 #albums {
@@ -279,6 +284,7 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    z-index: 999;
 }
 
 
@@ -298,10 +304,15 @@ footer {
     aside {
         padding: var(--padding-2);
         padding-right: 40px;
+        width: 35vw;
+    }
+
+    main {
+        padding-left: 35vw;
     }
 
     aside img {
-        width: 25px;
+        width: 30px;
     }
 
     aside span {
@@ -338,6 +349,14 @@ footer {
     .album-info {
         width: calc(100% / 4);
     }
+
+    aside {
+        width: 30vw;
+    }
+
+    main {
+        padding-left: 30vw;
+    }
 }
 
 /***********************
@@ -351,24 +370,16 @@ footer {
     .album-info {
         width: calc(100% / 6);
     }
+
+    aside {
+        width: 13vw
+    }
+
+    main {
+        padding-left: 13vw;
+    }
 }
 
 /***********************
     //DEKSTOP RESPONSIVE
 ***********************/
-
-
-aside {
-    position: fixed;
-    left: 0;
-    width: 13vw;
-    z-index: 998;
-}
-
-main {
-    padding-left: 13vw;
-}
-
-footer {
-    z-index: 999;
-}
