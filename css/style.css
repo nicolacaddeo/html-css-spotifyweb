@@ -4,7 +4,7 @@
     --padding-3: 5px;
     --header-padding: 0px 10px;
     --icon-padding: 5px 0;
-    --footer-height: 100px;
+    --footer-height: 90px;
     --header-height: 90px;
     --gray: #646464;
 }
@@ -74,12 +74,12 @@ section strong {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    position: relative;
 }
 
 .app-container {
     display: flex;
     flex-grow: 1;
+    height: 90vh;
 }
 
 /** Aside **/
@@ -87,6 +87,7 @@ aside {
     background-color: #000;
     padding: var(--padding);
     color: var(--gray);
+    height: calc(100vh - var(--footer-height));
 }
 
 #big-logo {
@@ -273,14 +274,14 @@ section:nth-child(4) {
 
 /** Footer **/
 footer {
-    height: var(--footer-height);
+    min-height: var(--footer-height);
     background-color: #282828;
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
-    left: 0;
-    z-index: -1;
 }
+
+
 
 /** //Footer **/
 
@@ -355,3 +356,19 @@ footer {
 /***********************
     //DEKSTOP RESPONSIVE
 ***********************/
+
+
+aside {
+    position: fixed;
+    left: 0;
+    width: 13vw;
+    z-index: 998;
+}
+
+main {
+    padding-left: 13vw;
+}
+
+footer {
+    z-index: 999;
+}
