@@ -74,6 +74,7 @@ section strong {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .app-container {
@@ -274,6 +275,11 @@ section:nth-child(4) {
 footer {
     height: var(--footer-height);
     background-color: #282828;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }
 
 /** //Footer **/
