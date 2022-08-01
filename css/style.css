@@ -51,6 +51,14 @@ img {
     justify-content: space-around;
 }
 
+.center {
+    justify-content: center;
+}
+
+.end {
+    justify-content: end;
+}
+
 .align-items-center {
     align-items: center;
 }
@@ -301,6 +309,8 @@ footer {
 #footer-container {
     width: 100%;
     padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #footer-container img {
@@ -321,6 +331,17 @@ footer {
     width: 40vw;
 }
 
+#play-button {
+    padding: 0 20px;
+    font-size: 1.6rem;
+}
+
+.big-footer-actions i {
+    font-size: 1.5rem;
+    padding: 0 5px;
+}
+
+
 #album-pic {
     width: 45px;
     margin-right: 10px;
@@ -337,6 +358,31 @@ footer {
 
 .gray-icon i {
     padding-bottom: 3px;
+}
+
+.progress-bar {
+    height: 3px;
+    border-radius: 2px;
+    background-color: var(--gray);
+    flex-grow: 1;
+    margin: 0 10px;
+    position: relative;
+}
+
+.progress-indication-bar {
+    height: 3px;
+    border-radius: 2px;
+    background-color: #fff;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.current-time,
+.end-time {
+    font-weight: 700;
+    font-size: 0.7rem;
 }
 
 /** //Footer **/
