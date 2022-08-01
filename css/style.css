@@ -34,6 +34,10 @@ img {
 /***********************
     UTILITIES
 ***********************/
+.flex {
+    display: flex;
+}
+
 .col {
     display: flex;
     flex-direction: column;
@@ -41,6 +45,10 @@ img {
 
 .space-between {
     justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
 }
 
 .align-items-center {
@@ -280,14 +288,56 @@ section:nth-child(4) {
 /** Footer **/
 footer {
     min-height: var(--footer-height);
+    color: #fff;
     background-color: #282828;
     position: fixed;
     width: 100%;
     bottom: 0;
     z-index: 999;
+    display: flex;
+    align-items: center;
 }
 
+#footer-container {
+    width: 100%;
+    padding: 10px 10px;
+}
 
+#footer-container img {
+    width: 100%;
+}
+
+#footer-container strong {
+    display: block;
+    color: var(--gray);
+    font-size: 0.7rem;
+}
+
+.footer-actions {
+    width: 25vw;
+}
+
+.big-footer-actions {
+    width: 40vw;
+}
+
+#album-pic {
+    width: 45px;
+    margin-right: 10px;
+}
+
+#album-footer-info {
+    line-height: 0.9rem;
+    margin-right: 20px;
+}
+
+.gray-icon {
+    color: var(--gray);
+}
+
+.gray-icon i {
+    padding-bottom: 3px;
+}
 
 /** //Footer **/
 
